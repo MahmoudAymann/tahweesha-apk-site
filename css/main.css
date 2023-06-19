@@ -1,0 +1,92 @@
+:root {
+  --pink: hsl(322, 100%, 66%);
+}
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+font-family: 'Tajawal', sans-serif;
+}
+.contanier {
+  margin: 0px auto;
+  padding: 10px;
+}
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../font/tajawal_regular.ttf') format('truetype');
+}
+a {
+  text-decoration: none;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .contanier {
+    width: 564px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .contanier {
+    width: 756px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .contanier {
+    width: 980px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .contanier {
+    width: 1190px;
+  }
+}
+
+body {
+  background-color: #322545;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-box {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+  align-items:center;
+}
+
+.text-box h1 {
+  font-weight: bold;
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+
+.text-box p {
+  font-size: 25px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.text-box a {
+  border-radius: 30px;
+  color: white;
+    background-color: hsl(322, 84%, 53%);
+  font-weight: bold;
+  padding: 15px 35px;
+  width: fit-content;
+    font-size: 28px;
+     text-align:center;
+}
+
+.text-box a:hover {
+    background-color: var(--pink);
+}
